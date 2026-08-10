@@ -10,7 +10,7 @@
 
 | Mục | Nội dung |
 |-----|----------|
-| Họ và tên | Kim Duy Hùng |
+| Họ và tên | Kim Duy Hưng |
 | Mã học viên | 01763 |
 | Repo | DAY12-01763-KimDuyHung |
 

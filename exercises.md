@@ -6,7 +6,7 @@
 > Cách trả lời: dán câu trả lời bên dưới từng câu hỏi.
 > `grade.py` đếm số câu đã trả lời (15 điểm cho 10 câu).
 >
-> Họ và tên: Kim Duy Hùng  Mã học viên: 01763
+> Họ và tên: Kim Duy Hưng  Mã học viên: 01763
 
 ---
 
