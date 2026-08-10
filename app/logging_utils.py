@@ -34,4 +34,14 @@ def log_event(event: str, level: str = "info", **fields) -> str:
         >>> log_event("ask_completed", user_id="sv01", cost_usd=0.0001)
         '{"event": "ask_completed", "level": "info", "timestamp": "...", ...}'
     """
-    raise NotImplementedError("TODO (CP1): cài đặt log_event")
+    payload = {
+        "event": event,
+        "level": level.lower(),
+        "timestamp": utc_now_iso(),
+    }
+    payload.update(fields)
+    log_str = json.dumps(payload, ensure_ascii=False)
+    print(log_str)
+    sys.stdout.flush()
+    return log_str
+
