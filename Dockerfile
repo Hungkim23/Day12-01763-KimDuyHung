@@ -32,6 +32,9 @@ FROM python:3.11-slim AS runtime
 
 WORKDIR /app
 
+ENV PORT=8000
+
+
 COPY --from=builder /install /usr/local
 
 COPY app ./app
