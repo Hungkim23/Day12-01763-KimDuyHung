@@ -18,7 +18,7 @@
 
 | Mục | Nội dung |
 |-----|----------|
-| Public URL | https://day12-agent-production.up.railway.app |
+| Public URL | https://day12-agent-production-00f2.up.railway.app |
 | Platform | Railway |
 | Ngày deploy | 2026-08-10 |
 
@@ -39,13 +39,13 @@ Ghi tên biến và **nguồn giá trị**, không ghi giá trị:
 
 ```bash
 # 1. Liveness — mong đợi 200 {"status":"ok"}
-curl -i https://day12-agent-production.up.railway.app/health
+curl -i https://day12-agent-production-00f2.up.railway.app/health
 
 # 2. Readiness — mong đợi 200 {"status":"ready"} (đã nối được Redis)
-curl -i https://day12-agent-production.up.railway.app/ready
+curl -i https://day12-agent-production-00f2.up.railway.app/ready
 
 # 3. Không có API key — mong đợi 401
-curl -i -X POST https://day12-agent-production.up.railway.app/ask \
+curl -i -X POST https://day12-agent-production-00f2.up.railway.app/ask \
   -H "Content-Type: application/json" \
   -d '{"question":"Hello"}'
 ```
